@@ -1,0 +1,6 @@
+/usr/share/openvswitch/scripts/ovs-ctl --system-id=random start
+ovs-vsctl add-br s1
+# standalone meand learn and install flows automatically
+ovs-vsctl set-fail-mode s1 standalone
+ovs-vsctl add-port s1 eth0
+ovs-vsctl add-port s1 eth1
