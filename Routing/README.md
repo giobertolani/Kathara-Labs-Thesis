@@ -6,7 +6,7 @@ In this folder, I uploaded two exercises that execute the same thing, but the st
 
 This lab has the same structure of the one used for Marionnet during my course in university, but a great part of it is useless or even partly incorrect. I created and uploaded the correct version of it so that the comparison can be done.
 
-+ **Without Switches**: in this lab, only the three hosts are present. As before, the two LANs are present and h2 belong to both of them, still working as the gateway.
++ **Without Switches**: in this lab, only the three hosts are present. As before, there are two LANs and h2 belongs to both of them, still working as the gateway.
 The lab demonstrates that, in this kind of tests, routers and switch are often not needed. They can be used just to create a more complex network scenario (just like I did in the previous lab).
 
 + **RomaLab**: the last lab is taken directly from a Kathará's official repository on GitHub. I just recreated the exercise described inside the repo to dive deeper and more consciously into the use of this framework. Here's the link:
