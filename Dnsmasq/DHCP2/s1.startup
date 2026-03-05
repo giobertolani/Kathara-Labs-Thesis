@@ -1,0 +1,10 @@
+ip addr add 192.168.1.254/24 dev eth0
+ip addr add 192.168.2.254/24 dev eth1
+ip addr add 192.168.3.254/24 dev eth2
+
+# enable forwarding
+sysctl -w net.ipv4.ip_forward=1
+
+# start dhcp relay
+dhcrelay -i eth0 -i eth2 -i eth1 192.168.2.253 &
+

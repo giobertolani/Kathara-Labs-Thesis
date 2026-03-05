@@ -1,0 +1,10 @@
+# (DHCP) dnsmasq.startup
+ip addr add 192.168.2.253/24 dev eth0
+ip link set eth0 up
+
+# to config hosts belonging to other LANs
+ip route add default via 192.168.2.254 dev eth0
+
+systemctl enable dnsmasq
+# in foreground
+service dnsmasq start &
