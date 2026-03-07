@@ -22,3 +22,4 @@ To emulate the attacks, we use the *ettercap* command with its various options a
 
 
 ## Cryptography
+This is a simple lab that can be used to test symmetric and asymmetric encryption, hash functions, Message Authentication Codes (MAC) and ECB Penguin. 
