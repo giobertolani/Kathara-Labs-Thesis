@@ -21,5 +21,7 @@ To emulate the attacks, we use the *ettercap* command with its various options a
 
 
 
-## Cryptography
-This is a simple lab that can be used to test symmetric and asymmetric encryption, hash functions, Message Authentication Codes (MAC) and ECB Penguin. 
+## Cryptography and Certification Authority (CA)
+This is a simple lab that can be used to test symmetric and asymmetric encryption, hash functions, Message Authentication Codes (MAC) and ECB Penguin.
+
+A Certification Authority (CA) is an entity that signs digital certificates (web notary). Most current websites reassure their users by using a secure connection for data exchange between client and server (HTTPS protocol). To ensure the authenticity, confidentiality, and integrity of exchanged data, the TLS protocol and digital certificates are used. This lab shows an example of the infrastructure needed to implement a small certificate chain.
