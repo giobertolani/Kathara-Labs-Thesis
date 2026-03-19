@@ -1,4 +1,4 @@
-# Security lab description
+# Security labs description
 
 ## Man In The Middle
 The aim is to demonstrate how network traffic between two communicating nodes can be intercepted and manipulated by malicious external entities. 
@@ -18,7 +18,11 @@ To emulate the attacks, we use the *ettercap* command with its various options a
 
 
 ## Firewall
+This lab consists of setting up *natting* and *firewalling* rules in a network composed of seven devices, where one of them (firewall) acts as a gateway between the three LANs present. The network I created is quite simple, but you can replace each device with other more complex devices like DHCP server, but you need to use the Dockerfile to create the correct Docker image (even for commands like w3m and ftp the image which installs them is required).
 
+The natting and firewall rules can be set in two ways:
++ in a dinamic way: after running the lab, you can write the rules as a command inside the device's tab. In this way, they will be valid as long as the lab is running, the moment you stop it everything will be cancelled;
++ in a static way: you can write the rules directly in the device's startup file so that they will always be active, even when the lab isn't running.
 
 
 ## Cryptography and Certification Authority (CA)
