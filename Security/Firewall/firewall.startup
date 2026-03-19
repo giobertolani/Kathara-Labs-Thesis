@@ -1,0 +1,7 @@
+ip address add 155.185.1.6/29 dev eth0
+ip address add 192.168.1.254/24 dev eth1
+ip address add 11.22.33.6/24 dev eth2
+
+# static firewall rules
+iptables -t filter -A INPUT -i eth0 -p udp --sport 68 --dport 67 -j ACCEPT
+iptables -t filter -A OUTPUT -o eth0 -p udp --sport 67 --dport 68 -j ACCEPT
